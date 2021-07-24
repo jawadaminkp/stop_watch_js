@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Stop Watch</title>
+
+    <style>
+
+         body { padding-top: 150px;}
+
+        .jumbotron { padding: 50px;}
+        .timer { font-size: 100px;}
+
+
+
+
+        @media screen and (max-width: 510px) {
+        .timer { font-size: 50px;}
+        .startBtn, .stopBtn, .resetBtn {display: block; margin: auto; width: 70%;}
+
+
+        }
+
+        @media screen and (max-width: 354px) {
+        .timer { font-size: 30px;}
+}
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+
+        <!-- timer -->
+        <div class="timer">
+            <span class="minutes">
+                00
+            </span> : 
+            <span class="seconds">
+                00
+            </span>
+        </div>
+
+        <!-- timer's buttons -->
+        <div class="timer-buttons">
+            <button class="btn btn-lg btn-success startBtn" data-action='start'>
+                Start
+            </button>
+            <button class="btn btn-lg btn-danger stopBtn" data-action='stop'>
+                Stop
+            </button>
+            <button class="btn btn-link btn-block resetBtn" data-action='reset'>
+                Reset
+            </button>
+        </div>
+
+    </div>
+        
+
+
+    <script src="stopWatchLogic.js"> </script>
+
+</body>
+</html>
