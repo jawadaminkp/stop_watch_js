@@ -4,69 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <title>Stop Watch</title>
+    <title>Accordion</title>
 
-    <style>
-
-         body { padding-top: 150px;}
-
-        .jumbotron { padding: 50px;}
-        .timer { font-size: 100px;}
-
-
-
-
-        @media screen and (max-width: 510px) {
-        .timer { font-size: 50px;}
-        .startBtn, .stopBtn, .resetBtn {display: block; margin: auto; width: 70%;}
-
-
-        }
-
-        @media screen and (max-width: 354px) {
-        .timer { font-size: 30px;}
-}
-
-
-
-
-
-    </style>
 
 </head>
 <body>
 
-    <div class="jumbotron text-center">
+    <div class="container">
+        <div class="accordion">
+            <ul class="list-unstyled">
+                <li class="open">
+                    <div class="question">
+                        <h2>What is your name?</h2>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </div>
+                    <div class="answer">
+                        <p>
+                        Jawad Amin! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Beatae animi libero odio eum aspernatur ad non, molestias dolores? 
+                         Alias sint voluptate culpa!
+                        </p>
+                    </div>
+                </li>
 
-        <!-- timer -->
-        <div class="timer">
-            <span class="minutes">
-                00
-            </span> : 
-            <span class="seconds">
-                00
-            </span>
+                <li>
+                    <div class="question">
+                        <h2>What is your Date of birth?</h2>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            02/02/2000! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Beatae animi libero odio eum aspernatur ad non, molestias dolores? 
+                            Alias sint voluptate culpa!
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="question">
+                        <h2>What is your email address?</h2>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            javadmainkp@gmail.com! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Beatae animi libero odio eum aspernatur ad non, molestias dolores? 
+                            Alias sint voluptate culpa!
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </div>
-
-        <!-- timer's buttons -->
-        <div class="timer-buttons">
-            <button class="btn btn-lg btn-success startBtn" data-action='start'>
-                Start
-            </button>
-            <button class="btn btn-lg btn-danger stopBtn" data-action='stop'>
-                Stop
-            </button>
-            <button class="btn btn-link btn-block resetBtn" data-action='reset'>
-                Reset
-            </button>
-        </div>
-
     </div>
-        
+    
+    <p class="text-success text-center">javadminkp</p>
+    <a href="https://learn.better.dev/">learnBetterDev</a>
 
-
-    <script src="stopWatchLogic.js"> </script>
+    <script src="logic.js"> </script>
 
 </body>
 </html>
